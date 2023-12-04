@@ -12226,6 +12226,10 @@ main .edit-profile {
   margin: auto;
   color: white;
 }
+main .edit-profile input[type=checkbox] {
+  width: 36px;
+  height: 36px;
+}
 main .edit-profile h3, main .edit-profile .h3 {
   font-size: 3rem;
   font-weight: 400;
