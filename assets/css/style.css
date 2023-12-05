@@ -12120,6 +12120,21 @@ main {
   position: relative;
   /* Styles from account file */
 }
+main .movie-cover {
+  transition: 0.3s;
+  opacity: 0.7;
+}
+main .movie-cover:hover {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+  transform: scale(1.025);
+  position: relative;
+  z-index: 1;
+}
+main :is(.carousel-control-prev, .carousel-control-next) {
+  width: 40px;
+}
 main h3, main .h3 {
   font-size: calc(10px + 0.75vw);
   line-height: 1.25vw;
@@ -12318,7 +12333,11 @@ main .buttons a:nth-child(2) {
   main .buttons button,
   main .buttons a {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+  }
+  main .buttons a:nth-child(2) {
+    width: 100%;
+    margin-top: 1rem;
   }
 }
 main .account-body {
